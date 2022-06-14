@@ -1,5 +1,7 @@
 # D3-challenge
 
+## https://dhirenkumarp.github.io/D3-challenge/
+
 ## Background
 Welcome to the newsroom! You've just accepted a data visualization position for a major metro paper. You're tasked with analyzing the current trends shaping people's lives, as well as creating charts, graphs, and interactive elements to help readers understand your findings.
 
@@ -16,3 +18,6 @@ Using D3 techniques, create a scatter plot that represents each state with circl
 - Include state abbreviations in the circles.
 
 - Create and situate your axes and labels to the left and bottom of the chart.
+
+![Scatter Plot](https://user-images.githubusercontent.com/98297243/173567711-192746a8-7f16-49c6-8f4b-44cdc30e0ae7.png)
+
