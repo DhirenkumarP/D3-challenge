@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>D3Times</title>
+  <title>D3 Challenge</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/d3Style.css">
@@ -13,14 +13,14 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-12">
-        <h1>D3Times</h1>
+      <div class="col-12" id="header">
+        <h1 style="text-align:center">Asessing Census Data</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12  col-md-9">
+      <div class="col-12">
         <div id="scatter">
-          <!-- We append our chart here. -->
+          <!-- We append our chart here using app.js. -->
         </div>
       </div>
     </div>
@@ -28,17 +28,20 @@
       <div class="col-xs-12  col-md-9">
         <div class="article">
           <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <p>From this data, a negative correlation is observed between the proportion of the population lacking access to healthcare,
+            and median household income within each state. This means that states with a higher median household income generally
+            have more access to healthcare, whereas poorer states have less access to healthcare services.
+          </p>
 
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <p>There is also a slightly positive correlation between the state's poverty rates, and rates of smokers. This 
+            observation may also be related to access to healthcare, as a lack of access to healthcare services may also be
 
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          </p>
+
+          <p>Additionally, there is a negative correlation between obesity rate and median household income across the states.
+            This could be explained also by a lack of access to healthcare services in poorer states, and could also indicate a 
+            lack of fresh food options in lower socioeconomic areas.
+          </p>
         </div>
       </div>
     </div>
@@ -46,12 +49,13 @@
 
   <!-- Footer-->
   <div id="footer">
-    <p>Dhiren Patel&copy;2022</p>
+    <p>Dhiren Patel, 2022</p>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
 
 </body>
